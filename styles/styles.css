@@ -19,9 +19,16 @@
   --color-logo-blue: #2196F3;
 }
 
-/* html {
-  background-color: var(--color-backgraund-html);
-} */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--color-backgraund-section);
   color: var(--color-black);
@@ -84,7 +91,7 @@ li{
 
 }
 .email, .tel {
-  color: var(--color-black);
+  color: var(--color-grey);
 }
 
 .email:hover,
@@ -142,6 +149,7 @@ text-transform: uppercase;
 }
 
 .advantage-title > .information__text {
+  color: var(--color-grey);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -173,11 +181,25 @@ text-transform: uppercase;
 
 }
 .title-team {
+  color: var(--color-black);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+/* identical to box height */
+  text-align: center;
 }
 
 .our-team__itams {
   background-color: var(--color-backgraund-section);
+}
+
+.team-profession {
+  color: var(--color-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+/* identical to box height */
+  text-align: center; 
 }
 
 
@@ -239,9 +261,11 @@ button {
   line-height: 0.2;
 /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+  max-height: 24px;
 }
 
 .main-text {
+  color: var(--color-grey);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
